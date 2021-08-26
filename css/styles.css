@@ -31,6 +31,15 @@ h1, .h1 {
 .backgroundCard {
   background-color: #8C7E6C; }
 
+.breadcrumb-link {
+  text-decoration: none; }
+
+.divLanguage {
+  height: 60vh; }
+
+.languageCard {
+  width: 50%; }
+
 /*bootstrap*/
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
