@@ -1,0 +1,236 @@
+.mainSection {
+  position: static;
+  background-image: url("../images/aguavidrio.jpg");
+  height: 300vh;
+  background-size: cover;
+  .mainSection--gradient {
+    background: rgb(20, 17, 17);
+    background: linear-gradient(
+      180deg,
+      $darkBackground 28%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutMe {
+    margin: 5%;
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .infoCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $creamWhite;
+      font-family: "Montserrat", sans-serif;
+      .profilePics--try {
+        width: 50%;
+        padding: 6%;
+      }
+      .info {
+        border: 2px $lighterButton solid;
+        padding: 5%;
+        .aboutMe__title {
+          font-size: 2.4rem;
+          font-family: "Roboto", sans-serif;
+        }
+        .aboutMe__paragraph--link {
+          @include links;
+        }
+        .buttonCV {
+          @include button(50%);
+        }
+        .aboutMe__skills {
+          margin-top: 4%;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          .aboutMe__skills--try {
+            height: 9vh;
+            margin: 2%;
+          }
+        }
+      }
+    }
+  }
+  .proyects {
+    height: 80vh;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    .infoCardProyects {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: sticky;
+      top: 15vh;
+      border: 2px $lighterButton solid;
+      color: $creamWhite;
+      font-family: "Montserrat", sans-serif;
+      // font-family: "Roboto", sans-serif;
+      .proyects__image--try {
+        width: 50%;
+      }
+      .info {
+        .buttonProyects {
+          @include button(100%);
+        }
+      }
+    }
+  }
+  .contactInfo {
+    height: 100vh;
+    width: 90%;
+    color: $creamWhite;
+    font-family: "Montserrat", sans-serif;
+    .contactTitle {
+      font-size: 3rem;
+      text-align: center;
+    }
+    .waysContact,
+    .socialMedia {
+      .waysContact__images,
+      .socialMedia__images {
+        margin: 1%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .socialMedia__links {
+          height: 15vh;
+          .waysContact__images--try,
+          .socialMedia__images--try {
+            margin: 1%;
+            height: 90%;
+          }
+          .socialMedia__images--try-duo {
+            margin: 1%;
+            height: 90%;
+            border-radius: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 863) {
+  .mainSection {
+    .aboutMe {
+      height: 125vh;
+      .infoCard {
+        top: 10vh;
+        flex-wrap: nowrap;
+        .profilePics--try {
+          width: 20%;
+        }
+        .info {
+          .aboutMe__paragraph--link {
+            @include links;
+          }
+          .buttonCV {
+            @include button(25%);
+          }
+        }
+      }
+    }
+    .proyects {
+      .infoCardProyects {
+        .info {
+          .buttonProyects {
+            @include button(25%);
+          }
+        }
+      }
+    }
+    .contactInfo {
+      .waysContact,
+      .socialMedia {
+        .waysContact__images,
+        .socialMedia__images {
+          justify-content: space-evenly;
+          .socialMedia__links {
+            height: 10vh;
+          }
+        }
+      }
+    }
+  }
+}
+//media QUERy
+@media screen and (min-width: 863px) {
+  .mainSection {
+    .aboutMe {
+      height: 125vh;
+      .infoCard {
+        top: 10vh;
+        flex-wrap: nowrap;
+        .profilePics--try {
+          width: 20%;
+        }
+        .info {
+          .aboutMe__paragraph--link {
+            @include links;
+          }
+          .buttonCV {
+            @include button();
+            &:hover {
+              visibility: visible;
+              animation: wave 1s forwards;
+            }
+          }
+        }
+      }
+    }
+    .proyects {
+      .infoCardProyects {
+        .info {
+          .buttonProyects {
+            @include button(30%);
+            &:hover {
+              visibility: visible;
+              animation: wave2 1s forwards;
+            }
+          }
+        }
+      }
+    }
+    .contactInfo {
+      .waysContact,
+      .socialMedia {
+        .waysContact__images,
+        .socialMedia__images {
+          justify-content: space-evenly;
+          .socialMedia__links {
+            height: 10vh;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes wave {
+  0% {
+    width: 15%;
+  }
+  100% {
+    width: 23%;
+  }
+}
+@keyframes wave2 {
+  0% {
+    width: 33%;
+  }
+  100% {
+    width: 40%;
+  }
+}

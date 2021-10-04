@@ -5,82 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galo Meggiolaro</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- CSS -->
+    <!-- SEO -->
+    <title>Galo Meggiolaro | Portfolio</title>
+    <!--fonts imported by sass-->
+    <!-- Links -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <main class="bg-primary">
-        <div class="container">
-            <div class="row bg-primary">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-md navbar-light bg-primary col-12">
-                        <div class="container-fluid ">
-                            <h1> <a class=" text-secondary fontNav  " href="index.html">GM</a></h1>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="icon icon-tabler icon-tabler-point text-secondary" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                    <circle cx="12" cy="12" r="11" />
-                                </svg>
-                            </button>
+    <main class="bg-black" width="99%">
+        <!-- header -->
+        <div class="stickyItem ">
+            <a href="index.html" class="homeLink">Home</a>
+            <nav class="landing__A--navBlock">
+                <a href="#aboutMe" class="navBlock--links">About Me</a>
+                <a href="#proyects" class="navBlock--links">Proyects</a>
+                <a href="#contact" class="navBlock--links">Contact</a>
+            </nav>
+        </div>
+        <!-- Landing -->
+        <div class="landingCol">
+            <div class="landing__A">
+                <header class="landing__A--name">
+                    <h1><a href="index.html">Galo Meggiolaro</a></h1>
+                </header>
+            </div>
+            <div class="landing__B">
+                <div class="landing__B--col">
+                    <p class="landing__B--description">23 y/o. Poliglot. CODERHOUSE student. Web developer.
+                        Goals: JS, React.js, HSKK-1</p>
+                    <img src="images/circle.svg" class="roll-out-right landing__B--animation">
+                </div>
+                <h2 class="landing__B--ocup">Front-end Developer</h2>
+            </div>
 
-                            <div class=" collapse navbar-collapse  " id="navbarTogglerDemo02">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex  justify-content-end" >
-                                    <li class="nav-item  ">
-                                        <a class="nav-link active text-secondary" aria-current="page"
-                                            href="#skills">Skills</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active text-secondary " href="versatility/versatility.html">Versatility</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active text-secondary" href="#" aria-disabled="true">About
-                                            me</a>
-                                    </li>
-                                </ul>
+        </div>
+        <div id="aboutMe"></div>
+        <!-- Sections||aboutMe||skills -->
+        <section class="mainSection">
+            <div class="mainSection--gradient">
+                <!-- aboutMe -->
+                <div class="aboutMe">
+                    <div class="infoCard">
+                        <img src="images/profilepic.png" class="profilePics--try">
+                        <div class="info">
+                            <!-- Title & Text -->
+                            <h3 class="aboutMe__title">About Me</h3>
+                            <p class="aboutMe__paragraph">I'm from Gualeguaychú, Entre Rios, Argentina. Living in CABA.
+                                I'm a passionate Developer with a huge need of knowledge. Poliglot. I know, at least,
+                                how to order
+                                food in <a href="list/list.html"
+                                    class="aboutMe__paragraph--link"><strong>these</strong></a> languages
+                                I love coffee and having it with my family.
+                                I prefer winter and rainy days.
+                            </p>
+                            <!-- Buttons -->
+                            <a href="cv/meggiolaro, galo.pdf"><button class="buttonCV">CV</button></a>
+                            <a href="https://www.linkedin.com/in/galomeggiolaro/"><button
+                                    class="buttonCV">Linked-in</button></a>
+                            <!-- Skills -->
+                            <div class="aboutMe__skills">
+                                <p>Skills:</p>
+                                <img src="images/skills/html.png" alt="" class="aboutMe__skills--try">
+                                <img src="images/skills/css.png" alt="" class="aboutMe__skills--try">
+                                <img src="images/skills/sass.png" alt="" class="aboutMe__skills--try">
+                                <img src="images/skills/bootstrap.png" alt="" class="aboutMe__skills--try">
+                                <img src="images/skills/git.png" alt="" class="aboutMe__skills--try">
+                                <img src="images/skills/github.png" alt="" class="aboutMe__skills--try">
                             </div>
                         </div>
-                    </nav>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container landing">
-            <div class="row bg-light">
-                <div class="col-12 background">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="card col-md-6 bg-light  ">
-                    <div class="card-body bg-info">
-                        <img src="images/craftysample.png" class="card-img-top" alt="...">
-                        <h5 class="card-title text-pink">Crafty Accs</h5>
-                        <h6 class="card-subtitle mb-2 text-white">E-commerce</h6>
-                        <p class="card-text">Mockup + Developed with tools known</p>
-                        <a href="https://galomegg.github.io/craftyaccs" class="btn btn-primary text-white">Site</a>
-                        <a href="https://github.com/GaloMegg/galomegg.github.io.git"
-                            class="btn btn-success text-white">Repository</a>
+                <div id="proyects"></div>
+                <!-- Proyects -->
+                <div class="proyects">
+                    <div class="infoCardProyects">
+                        <img src="images/proyects/craftysample.png" alt="" class="proyects__image--try">
+                        <div class="info">
+                            <h4>"Crafty Accesorios"</h4>
+                            <p>Static e-commerce, final proyects of "Web development" of CODERHOUSE</p>
+                            <a href="https://galomegg.github.io/craftyaccs/index.html"><button
+                                    class="buttonProyects">Site</button></a>
+                            <a href="https://github.com/GaloMegg/CraftyAccesorios-Meggiolaro"><button
+                                    class="buttonProyects">Repository</button></a>
+                        </div>
+                    </div>
+                </div>}
+                <div id="contact"></div>
+                <!-- Contact -->
+                <div class="contactInfo">
+                    <h5 class="contactTitle">Contact</h5>
+                    <div class="socialMedia">
+                        <p>My social medias, where I see news from all around the world, or I learn some languages.</p>
+                        <div class="socialMedia__images">
+                            <a href="https://www.linkedin.com/in/galomeggiolaro/" class="socialMedia__links"><img
+                                    src="images/contact/linkedin.svg" alt="" class="socialMedia__images--try"></a>
+                            <a href="https://www.duolingo.com/profile/.wtsCrackin" class="socialMedia__links"><img
+                                    src="images/contact/duolingo.png" alt="" class="socialMedia__images--try-duo"></a>
+                            <a href="https://twitter.com/Wtscrackin" class="socialMedia__links"><img
+                                    src="images/contact/twitter.svg" alt="" class="socialMedia__images--try"></a>
+                        </div>
+                    </div>
+                    <div class="waysContact">
+                        <p>Ways of contact, where you can send a message and I'll reply ASAP.</p>
+                        <div class="waysContact__images">
+                            <a href="https://t.me/wtscrackin" class="socialMedia__links"><img src="images/contact/telegram.svg" alt=""
+                                    class="waysContact__images--try"></a>
+                            <a href="http://wa.me/5493446638940" class="socialMedia__links"><img src="images/contact/whatsapp.svg" alt=""
+                                    class="waysContact__images--try"></a>
+                            <a href="https://discord.gg/9xfTzKwfvf " class="socialMedia__links"><img src="images/contact/discord.svg" alt=""
+                                    class="waysContact__images--try"></a>
+                            <a href="galomeggiolaro.slack.com " class="socialMedia__links"><img src="images/contact/slack.svg" alt=""
+                                    class="waysContact__images--try"></a>
+                            <a href="wechatqr.html" class="socialMedia__links"><img src="images/contact/wechat.svg" alt=""
+                                    class="waysContact__images--try"></a>
+                            <a href="mailto:galomeggiolarobul@gmail.com" class="socialMedia__links"><img src="images/contact/gmail.svg" alt=""
+                                    class="socialMedia__images--try"></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-
-        
-
+        </section>
+        <footer>
+            <h6>asdasd</h6>
+            <ul>
+                <li>
+                    Links utiles
+                </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </footer>
     </main>
-
     <script src="js/bootstrap.js"></script>
 </body>
 

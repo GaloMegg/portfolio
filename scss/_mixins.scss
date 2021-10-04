@@ -1,0 +1,23 @@
+@mixin links {
+  color: $creamWhite;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.1%;
+  &:hover{
+    color: rgb(187, 179, 179);
+  }
+}
+
+@mixin button($width: 15%) {
+  width: $width;
+  height: 5vh;
+  border-radius: 12px;
+  background-color: $lighterButton;
+  color: $creamWhite;
+  &:hover {
+    background-color: $darkBackground;
+    visibility: visible;
+  }
+}
+
