@@ -35,9 +35,10 @@
     }
   }
 }
-@media screen and (min-width: 645px){
+@media screen and (min-width: 645px) {
   .stickyItem {
-    justify-content: space-between;}
+    justify-content: space-between;
+  }
 }
 @keyframes slide-out-bottom {
   0% {
