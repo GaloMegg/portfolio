@@ -26,6 +26,7 @@
     justify-content: center;
     .infoCard {
       display: flex;
+      position: relative;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -33,7 +34,7 @@
       font-family: "Montserrat", sans-serif;
       .profilePics--try {
         width: 50%;
-        padding: 6%;
+        display: none;
       }
       .info {
         border: 2px $lighterButton solid;
@@ -176,6 +177,7 @@
         flex-wrap: nowrap;
         .profilePics--try {
           width: 20%;
+          display: block;
         }
         .info {
           .aboutMe__paragraph--link {
