@@ -132,6 +132,11 @@
     text-align: center;
     justify-content: flex-end;
     width: 90%; }
+    .stickyItem .landing__A--navBlock .navBlock--toggle {
+      width: 10%; }
+      .stickyItem .landing__A--navBlock .navBlock--toggle .navBlock--toggle--nudemode {
+        width: 90%;
+        color: #faf9f7; }
     .stickyItem .landing__A--navBlock .navBlock--links:nth-child(1) {
       animation: slide-out-bottom 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both; }
     .stickyItem .landing__A--navBlock .navBlock--links:nth-child(2) {

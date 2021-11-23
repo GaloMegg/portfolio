@@ -18,6 +18,13 @@
     text-align: center;
     justify-content: flex-end;
     width: 90%;
+    .navBlock--toggle {
+      width: 10%;
+      .navBlock--toggle--nudemode {
+        width: 90%;
+        color: $creamWhite;
+      }
+    }
     .navBlock--links:nth-child(1) {
       animation: slide-out-bottom 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53)
         reverse both;
