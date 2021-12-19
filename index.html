@@ -23,7 +23,7 @@
                     xmlns="http://www.w3.org/2000/svg" >
                     <circle cx="60" cy="60" r="50" class="navBlock--toggle--nudemode"/>
                   </svg></a> -->
-                <a href="#aboutMe" class="navBlock--links">About Me</a>
+                <a href="#aboutMe" id="aboutMe" class="navBlock--links">About Me</a>
                 <a href="#proyects" class="navBlock--links">Proyects</a>
                 <a href="#contact" class="navBlock--links">Contact</a>
             </nav>
@@ -45,12 +45,12 @@
             </div>
 
         </div>
-        <div id="aboutMe"></div>
+        <div id="aboutMeScroll"></div>
         <!-- Sections||aboutMe||skills -->
         <section class="mainSection">
             <div class="mainSection--gradient">
                 <!-- aboutMe -->
-                <div class="aboutMe">
+                <div class="aboutMe" >
                     <div class="infoCard">
                         <img src="images/profilepic.png" class="profilePics--try">
                         <div class="info">
@@ -65,14 +65,16 @@
                                 I prefer winter and rainy days.
                             </p>
                             <!-- Buttons -->
-                            <a href="cv/meggiolaro, galo.pdf"><button class="buttonCV">CV</button></a>
+                            <a href="cv/meggiolarogalo.pdf"><button class="buttonCV">CV</button></a>
                             <a href="https://www.linkedin.com/in/galomeggiolaro/"><button
                                     class="buttonCV">Linked-in</button></a>
                             <!-- Skills -->
                             <div class="aboutMe__skills">
                                 <p>Skills:</p>
+                                <img src="images/skills/javascript.svg" alt="" class="aboutMe__skills--try">
                                 <img src="images/skills/html.png" alt="" class="aboutMe__skills--try">
                                 <img src="images/skills/css.png" alt="" class="aboutMe__skills--try">
+                                <img src="images/skills/jquery.svg" alt="" class="aboutMe__skills--try">
                                 <img src="images/skills/sass.png" alt="" class="aboutMe__skills--try">
                                 <img src="images/skills/bootstrap.png" alt="" class="aboutMe__skills--try">
                                 <img src="images/skills/git.png" alt="" class="aboutMe__skills--try">
@@ -137,6 +139,9 @@
         </footer>
     </main>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>
