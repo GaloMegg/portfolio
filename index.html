@@ -17,19 +17,15 @@
     <main>
         <!-- header -->
         <div class="stickyItem ">
-            <a href="index.html" class="homeLink">Home</a>
+            <a href="#homeScroll" class="homeLink" id="home">Home</a>
             <nav class="landing__A--navBlock">
-                <!-- <a class="navBlock--toggle"><svg viewBox="0 0 120 120" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg" >
-                    <circle cx="60" cy="60" r="50" class="navBlock--toggle--nudemode"/>
-                  </svg></a> -->
-                <a href="#aboutMe" id="aboutMe" class="navBlock--links">About Me</a>
-                <a href="#proyects" class="navBlock--links">Proyects</a>
-                <a href="#contact" class="navBlock--links">Contact</a>
+                <a href="#aboutMeScroll" id="aboutMe" class="navBlock--links">About Me</a>
+                <a href="#proyectsScroll" id="proyects" class="navBlock--links">Proyects</a>
+                <a href="#contactScroll" id="contact" class="navBlock--links">Contact</a>
             </nav>
         </div>
         <!-- Landing -->
-        <div class="landingCol">
+        <div class="landingCol" id="homeScroll">
             <div class="landing__A">
                 <header class="landing__A--name">
                     <h1><a href="index.html">Galo Meggiolaro</a></h1>
@@ -50,7 +46,7 @@
         <section class="mainSection">
             <div class="mainSection--gradient">
                 <!-- aboutMe -->
-                <div class="aboutMe" >
+                <div class="aboutMe">
                     <div class="infoCard">
                         <img src="images/profilepic.png" class="profilePics--try">
                         <div class="info">
@@ -83,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="proyects"></div>
+                <div id="proyectsScroll"></div>
                 <!-- Proyects -->
                 <div class="proyects">
                     <div class="infoCardProyects">
@@ -98,7 +94,7 @@
                         </div>
                     </div>
                 </div>}
-                <div id="contact"></div>
+                <div id="contactScroll"></div>
                 <!-- Contact -->
                 <div class="contactInfo">
                     <h5 class="contactTitle">Contact</h5>

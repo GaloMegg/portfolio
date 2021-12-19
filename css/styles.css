@@ -53,11 +53,13 @@
   color: #faf9f7;
   animation: text-blur-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
   font-family: "Montserrat", sans-serif;
+  z-index: 2;
 }
 .landingCol .landing__B .landing__B--col .landing__B--animation {
   animation: rotation 10s infinite linear;
   width: 26%;
   position: absolute;
+  z-index: 1;
 }
 .landingCol .landing__B .landing__B--ocup {
   padding: 2%;
@@ -421,7 +423,7 @@
   }
   .mainSection .aboutMe .infoCard {
     top: 10vh;
-    flex-wrap: nowrap;
+    flex-direction: row;
   }
   .mainSection .aboutMe .infoCard .profilePics--try {
     width: 20%;

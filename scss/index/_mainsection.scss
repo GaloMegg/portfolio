@@ -130,6 +130,7 @@
       height: 125vh;
       .infoCard {
         top: 10vh;
+
         flex-wrap: nowrap;
         .profilePics--try {
           width: 20%;
@@ -174,7 +175,8 @@
       height: 125vh;
       .infoCard {
         top: 10vh;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        
         .profilePics--try {
           width: 20%;
           display: block;
