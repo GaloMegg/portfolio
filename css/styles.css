@@ -207,6 +207,11 @@
     opacity: 0;
   }
 }
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .mainSection {
   position: static;
   background-image: url("../images/aguavidrio.jpg");
@@ -252,14 +257,21 @@
   font-size: 2.4rem;
   font-family: "Roboto", sans-serif;
 }
-.mainSection .aboutMe .infoCard .info .aboutMe__paragraph--link {
+.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .lenguagesListHeader {
+  margin: 0;
+  padding: 0;
+}
+.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .lenguagesListHeader .languagesList--try {
+  display: none;
+}
+.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .aboutMe__paragraph--link {
   color: #faf9f7;
   text-decoration: none;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   padding: 0.1%;
 }
-.mainSection .aboutMe .infoCard .info .aboutMe__paragraph--link:hover {
+.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .aboutMe__paragraph--link:hover {
   color: #bbb3b3;
 }
 .mainSection .aboutMe .infoCard .info .buttonCV {
