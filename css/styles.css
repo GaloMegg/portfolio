@@ -215,7 +215,7 @@ p {
 .mainSection {
   position: static;
   background-image: url("../images/aguavidrio.jpg");
-  height: 300vh;
+  min-height: 400vh;
   background-size: cover;
 }
 .mainSection .mainSection--gradient {
@@ -297,25 +297,25 @@ p {
   margin: 2%;
 }
 .mainSection .proyects {
-  height: 80vh;
-  margin-top: 15%;
+  position: relative;
+  margin-top: 5%;
   margin-bottom: 10%;
   margin-left: 2%;
   margin-right: 2%;
   padding: 2%;
 }
 .mainSection .proyects .infoCardProyects {
+  margin: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  position: sticky;
-  top: 15vh;
+  top: 5vh;
   border: 2px #3a3838 solid;
   color: #faf9f7;
   font-family: "Montserrat", sans-serif;
 }
 .mainSection .proyects .infoCardProyects .proyects__image--try {
-  width: 50%;
+  width: 100%;
 }
 .mainSection .proyects .infoCardProyects .info .buttonProyects {
   width: 100%;
@@ -329,6 +329,8 @@ p {
   visibility: visible;
 }
 .mainSection .contactInfo {
+  margin-top: 5%;
+  position: relative;
   height: 100vh;
   width: 90%;
   color: #faf9f7;
@@ -465,6 +467,12 @@ p {
   .mainSection .aboutMe .infoCard .info .buttonCV:hover {
     visibility: visible;
     animation: wave 1s forwards;
+  }
+  .mainSection .proyects .infoCardProyects {
+    flex-direction: row;
+  }
+  .mainSection .proyects .infoCardProyects .proyects__image--try {
+    width: 50%;
   }
   .mainSection .proyects .infoCardProyects .info .buttonProyects {
     width: 30%;

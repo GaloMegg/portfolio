@@ -6,7 +6,7 @@ p {
 .mainSection {
   position: static;
   background-image: url("../images/aguavidrio.jpg");
-  height: 300vh;
+  min-height: 400vh;
   background-size: cover;
   .mainSection--gradient {
     background: rgb(20, 17, 17);
@@ -78,24 +78,24 @@ p {
     }
   }
   .proyects {
-    height: 80vh;
-    margin-top: 15%;
+    position: relative;
+    margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 2%;
     margin-right: 2%;
     padding: 2%;
     .infoCardProyects {
+      margin: 10%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      position: sticky;
-      top: 15vh;
+      top: 5vh;
       border: 2px $lighterButton solid;
       color: $creamWhite;
       font-family: "Montserrat", sans-serif;
       // font-family: "Roboto", sans-serif;
       .proyects__image--try {
-        width: 50%;
+        width: 100%;
       }
       .info {
         .buttonProyects {
@@ -105,6 +105,8 @@ p {
     }
   }
   .contactInfo {
+    margin-top: 5%;
+    position: relative;
     height: 100vh;
     width: 90%;
     color: $creamWhite;
@@ -211,6 +213,10 @@ p {
     }
     .proyects {
       .infoCardProyects {
+        flex-direction: row;
+        .proyects__image--try {
+          width: 50%;
+        }
         .info {
           .buttonProyects {
             @include button(30%);
