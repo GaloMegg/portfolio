@@ -329,9 +329,9 @@ p {
   visibility: visible;
 }
 .mainSection .contactInfo {
-  margin-top: 5%;
+  background-color: rgba(17, 16, 16, 0.486);
+  margin-top: 3%;
   position: relative;
-  height: 100vh;
   width: 90%;
   color: #faf9f7;
   font-family: "Montserrat", sans-serif;
@@ -346,7 +346,7 @@ p {
 .mainSection .contactInfo .socialMedia .socialMedia__images {
   margin: 1%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .mainSection .contactInfo .waysContact .waysContact__images .socialMedia__links,
@@ -488,6 +488,9 @@ p {
   .mainSection .proyects .infoCardProyects .info .buttonProyects:hover {
     visibility: visible;
     animation: wave2 1s forwards;
+  }
+  .mainSection .contactInfo {
+    text-align: center;
   }
   .mainSection .contactInfo .waysContact .waysContact__images,
 .mainSection .contactInfo .waysContact .socialMedia__images,

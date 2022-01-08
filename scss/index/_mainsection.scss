@@ -105,9 +105,9 @@ p {
     }
   }
   .contactInfo {
-    margin-top: 5%;
+    background-color: rgba(17, 16, 16, 0.486);
+    margin-top: 3%;
     position: relative;
-    height: 100vh;
     width: 90%;
     color: $creamWhite;
     font-family: "Montserrat", sans-serif;
@@ -121,7 +121,7 @@ p {
       .socialMedia__images {
         margin: 1%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         .socialMedia__links {
           height: 15vh;
@@ -229,6 +229,7 @@ p {
       }
     }
     .contactInfo {
+      text-align: center;
       .waysContact,
       .socialMedia {
         .waysContact__images,
