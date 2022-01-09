@@ -1,0 +1,103 @@
+.aboutMe {
+  margin: 5%;
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .infoCard {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $creamWhite;
+    font-family: "Montserrat", sans-serif;
+    .profilePics--try {
+      width: 50%;
+      display: none;
+    }
+    .info {
+      border: 2px $lighterButton solid;
+      padding: 5%;
+      .aboutMe__title {
+        font-size: 2.4rem;
+        font-family: "Roboto", sans-serif;
+      }
+      .aboutMe__paragraph {
+        .lenguagesListHeader {
+          margin: 0;
+          padding: 0;
+          .languagesList--try {
+            display: none;
+          }
+        }
+        .aboutMe__paragraph--link {
+          @include links;
+        }
+      }
+      .buttonCV {
+        @include button(50%);
+      }
+      .aboutMe__skills {
+        margin-top: 4%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .aboutMe__skills--try {
+          height: 9vh;
+          margin: 2%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 863) {
+  .aboutMe {
+    height: 125vh;
+    .infoCard {
+      top: 10vh;
+
+      flex-wrap: nowrap;
+      .profilePics--try {
+        width: 20%;
+      }
+      .info {
+        .aboutMe__paragraph--link {
+          @include links;
+        }
+        .buttonCV {
+          @include button(25%);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 863px) {
+  .aboutMe {
+    height: 125vh;
+    .infoCard {
+      top: 10vh;
+      flex-direction: row;
+
+      .profilePics--try {
+        width: 20%;
+        display: block;
+      }
+      .info {
+        .aboutMe__paragraph--link {
+          @include links;
+        }
+        .buttonCV {
+          @include button();
+          &:hover {
+            visibility: visible;
+            animation: wave 1s forwards;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.proyects {
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+  .infoCardProyects {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 5vh;
+    border: 2px $lighterButton solid;
+    color: $creamWhite;
+    font-family: "Montserrat", sans-serif;
+    // font-family: "Roboto", sans-serif;
+    .proyects__image--try {
+      width: 100%;
+    }
+    .info {
+      .buttonProyects {
+        @include button(100%);
+      }
+    }
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 863) {
+  .proyects {
+    .infoCardProyects {
+      .info {
+        .buttonProyects {
+          @include button(25%);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 863px) {
+  .proyects {
+    .infoCardProyects {
+      flex-direction: row;
+      .proyects__image--try {
+        width: 50%;
+      }
+      .info {
+        .buttonProyects {
+          @include button(30%);
+          &:hover {
+            visibility: visible;
+            animation: wave2 1s forwards;
+          }
+        }
+      }
+    }
+  }
+}

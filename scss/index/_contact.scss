@@ -1,0 +1,65 @@
+.contactInfo {
+  background-color: rgba(17, 16, 16, 0.486);
+  margin: 3%;
+  position: relative;
+  width: 90%;
+  color: $creamWhite;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  .contactTitle {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .waysContact,
+  .socialMedia {
+    .waysContact__images,
+    .socialMedia__images {
+      margin: 1%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .socialMedia__links {
+        height: 15vh;
+        .waysContact__images--try,
+        .socialMedia__images--try {
+          margin: 1%;
+          height: 90%;
+        }
+        .socialMedia__images--try-duo {
+          margin: 1%;
+          height: 90%;
+          border-radius: 9px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 863) {
+  .contactInfo {
+    .waysContact,
+    .socialMedia {
+      .waysContact__images,
+      .socialMedia__images {
+        justify-content: space-evenly;
+        .socialMedia__links {
+          height: 10vh;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 863px) {
+  .contactInfo {
+    text-align: center;
+    .waysContact,
+    .socialMedia {
+      .waysContact__images,
+      .socialMedia__images {
+        justify-content: space-evenly;
+        .socialMedia__links {
+          height: 10vh;
+        }
+      }
+    }
+  }
+}

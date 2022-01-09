@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .landingCol {
   position: relative;
   display: flex;
@@ -137,6 +142,85 @@
     height: 10vh;
   }
 }
+.contactInfo {
+  background-color: rgba(17, 16, 16, 0.486);
+  margin: 3%;
+  position: relative;
+  width: 90%;
+  color: #faf9f7;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.contactInfo .contactTitle {
+  font-size: 3rem;
+  text-align: center;
+}
+.contactInfo .waysContact .waysContact__images,
+.contactInfo .waysContact .socialMedia__images,
+.contactInfo .socialMedia .waysContact__images,
+.contactInfo .socialMedia .socialMedia__images {
+  margin: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contactInfo .waysContact .waysContact__images .socialMedia__links,
+.contactInfo .waysContact .socialMedia__images .socialMedia__links,
+.contactInfo .socialMedia .waysContact__images .socialMedia__links,
+.contactInfo .socialMedia .socialMedia__images .socialMedia__links {
+  height: 15vh;
+}
+.contactInfo .waysContact .waysContact__images .socialMedia__links .waysContact__images--try,
+.contactInfo .waysContact .waysContact__images .socialMedia__links .socialMedia__images--try,
+.contactInfo .waysContact .socialMedia__images .socialMedia__links .waysContact__images--try,
+.contactInfo .waysContact .socialMedia__images .socialMedia__links .socialMedia__images--try,
+.contactInfo .socialMedia .waysContact__images .socialMedia__links .waysContact__images--try,
+.contactInfo .socialMedia .waysContact__images .socialMedia__links .socialMedia__images--try,
+.contactInfo .socialMedia .socialMedia__images .socialMedia__links .waysContact__images--try,
+.contactInfo .socialMedia .socialMedia__images .socialMedia__links .socialMedia__images--try {
+  margin: 1%;
+  height: 90%;
+}
+.contactInfo .waysContact .waysContact__images .socialMedia__links .socialMedia__images--try-duo,
+.contactInfo .waysContact .socialMedia__images .socialMedia__links .socialMedia__images--try-duo,
+.contactInfo .socialMedia .waysContact__images .socialMedia__links .socialMedia__images--try-duo,
+.contactInfo .socialMedia .socialMedia__images .socialMedia__links .socialMedia__images--try-duo {
+  margin: 1%;
+  height: 90%;
+  border-radius: 9px;
+}
+
+@media screen and (min-width: 645px) and (max-width: 863) {
+  .contactInfo .waysContact .waysContact__images,
+.contactInfo .waysContact .socialMedia__images,
+.contactInfo .socialMedia .waysContact__images,
+.contactInfo .socialMedia .socialMedia__images {
+    justify-content: space-evenly;
+  }
+  .contactInfo .waysContact .waysContact__images .socialMedia__links,
+.contactInfo .waysContact .socialMedia__images .socialMedia__links,
+.contactInfo .socialMedia .waysContact__images .socialMedia__links,
+.contactInfo .socialMedia .socialMedia__images .socialMedia__links {
+    height: 10vh;
+  }
+}
+@media screen and (min-width: 863px) {
+  .contactInfo {
+    text-align: center;
+  }
+  .contactInfo .waysContact .waysContact__images,
+.contactInfo .waysContact .socialMedia__images,
+.contactInfo .socialMedia .waysContact__images,
+.contactInfo .socialMedia .socialMedia__images {
+    justify-content: space-evenly;
+  }
+  .contactInfo .waysContact .waysContact__images .socialMedia__links,
+.contactInfo .waysContact .socialMedia__images .socialMedia__links,
+.contactInfo .socialMedia .waysContact__images .socialMedia__links,
+.contactInfo .socialMedia .socialMedia__images .socialMedia__links {
+    height: 10vh;
+  }
+}
 .stickyItem {
   z-index: 3;
   position: sticky;
@@ -207,11 +291,216 @@
     opacity: 0;
   }
 }
-p {
-  padding: 0;
-  margin: 0;
+.proyects {
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+}
+.proyects .infoCardProyects {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 5vh;
+  border: 2px #3a3838 solid;
+  color: #faf9f7;
+  font-family: "Montserrat", sans-serif;
+}
+.proyects .infoCardProyects .proyects__image--try {
+  width: 100%;
+}
+.proyects .infoCardProyects .info .buttonProyects {
+  width: 100%;
+  height: 5vh;
+  border-radius: 12px;
+  background-color: #3a3838;
+  color: #faf9f7;
+}
+.proyects .infoCardProyects .info .buttonProyects:hover {
+  background-color: #141111;
+  visibility: visible;
 }
 
+@media screen and (min-width: 645px) and (max-width: 863) {
+  .proyects .infoCardProyects .info .buttonProyects {
+    width: 25%;
+    height: 5vh;
+    border-radius: 12px;
+    background-color: #3a3838;
+    color: #faf9f7;
+  }
+  .proyects .infoCardProyects .info .buttonProyects:hover {
+    background-color: #141111;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 863px) {
+  .proyects .infoCardProyects {
+    flex-direction: row;
+  }
+  .proyects .infoCardProyects .proyects__image--try {
+    width: 50%;
+  }
+  .proyects .infoCardProyects .info .buttonProyects {
+    width: 30%;
+    height: 5vh;
+    border-radius: 12px;
+    background-color: #3a3838;
+    color: #faf9f7;
+  }
+  .proyects .infoCardProyects .info .buttonProyects:hover {
+    background-color: #141111;
+    visibility: visible;
+  }
+  .proyects .infoCardProyects .info .buttonProyects:hover {
+    visibility: visible;
+    animation: wave2 1s forwards;
+  }
+}
+.aboutMe {
+  margin: 5%;
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutMe .infoCard {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #faf9f7;
+  font-family: "Montserrat", sans-serif;
+}
+.aboutMe .infoCard .profilePics--try {
+  width: 50%;
+  display: none;
+}
+.aboutMe .infoCard .info {
+  border: 2px #3a3838 solid;
+  padding: 5%;
+}
+.aboutMe .infoCard .info .aboutMe__title {
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
+}
+.aboutMe .infoCard .info .aboutMe__paragraph .lenguagesListHeader {
+  margin: 0;
+  padding: 0;
+}
+.aboutMe .infoCard .info .aboutMe__paragraph .lenguagesListHeader .languagesList--try {
+  display: none;
+}
+.aboutMe .infoCard .info .aboutMe__paragraph .aboutMe__paragraph--link {
+  color: #faf9f7;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.1%;
+}
+.aboutMe .infoCard .info .aboutMe__paragraph .aboutMe__paragraph--link:hover {
+  color: #bbb3b3;
+}
+.aboutMe .infoCard .info .buttonCV {
+  width: 50%;
+  height: 5vh;
+  border-radius: 12px;
+  background-color: #3a3838;
+  color: #faf9f7;
+}
+.aboutMe .infoCard .info .buttonCV:hover {
+  background-color: #141111;
+  visibility: visible;
+}
+.aboutMe .infoCard .info .aboutMe__skills {
+  margin-top: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.aboutMe .infoCard .info .aboutMe__skills .aboutMe__skills--try {
+  height: 9vh;
+  margin: 2%;
+}
+
+@media screen and (min-width: 645px) and (max-width: 863) {
+  .aboutMe {
+    height: 125vh;
+  }
+  .aboutMe .infoCard {
+    top: 10vh;
+    flex-wrap: nowrap;
+  }
+  .aboutMe .infoCard .profilePics--try {
+    width: 20%;
+  }
+  .aboutMe .infoCard .info .aboutMe__paragraph--link {
+    color: #faf9f7;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.1%;
+  }
+  .aboutMe .infoCard .info .aboutMe__paragraph--link:hover {
+    color: #bbb3b3;
+  }
+  .aboutMe .infoCard .info .buttonCV {
+    width: 25%;
+    height: 5vh;
+    border-radius: 12px;
+    background-color: #3a3838;
+    color: #faf9f7;
+  }
+  .aboutMe .infoCard .info .buttonCV:hover {
+    background-color: #141111;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 863px) {
+  .aboutMe {
+    height: 125vh;
+  }
+  .aboutMe .infoCard {
+    top: 10vh;
+    flex-direction: row;
+  }
+  .aboutMe .infoCard .profilePics--try {
+    width: 20%;
+    display: block;
+  }
+  .aboutMe .infoCard .info .aboutMe__paragraph--link {
+    color: #faf9f7;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.1%;
+  }
+  .aboutMe .infoCard .info .aboutMe__paragraph--link:hover {
+    color: #bbb3b3;
+  }
+  .aboutMe .infoCard .info .buttonCV {
+    width: 15%;
+    height: 5vh;
+    border-radius: 12px;
+    background-color: #3a3838;
+    color: #faf9f7;
+  }
+  .aboutMe .infoCard .info .buttonCV:hover {
+    background-color: #141111;
+    visibility: visible;
+  }
+  .aboutMe .infoCard .info .buttonCV:hover {
+    visibility: visible;
+    animation: wave 1s forwards;
+  }
+}
 .mainSection {
   position: static;
   background-image: url("../images/aguavidrio.jpg");
@@ -227,284 +516,7 @@ p {
   align-items: center;
   flex-direction: column;
 }
-.mainSection .aboutMe {
-  margin: 5%;
-  height: 100vh;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.mainSection .aboutMe .infoCard {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #faf9f7;
-  font-family: "Montserrat", sans-serif;
-}
-.mainSection .aboutMe .infoCard .profilePics--try {
-  width: 50%;
-  display: none;
-}
-.mainSection .aboutMe .infoCard .info {
-  border: 2px #3a3838 solid;
-  padding: 5%;
-}
-.mainSection .aboutMe .infoCard .info .aboutMe__title {
-  font-size: 2.4rem;
-  font-family: "Roboto", sans-serif;
-}
-.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .lenguagesListHeader {
-  margin: 0;
-  padding: 0;
-}
-.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .lenguagesListHeader .languagesList--try {
-  display: none;
-}
-.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .aboutMe__paragraph--link {
-  color: #faf9f7;
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  padding: 0.1%;
-}
-.mainSection .aboutMe .infoCard .info .aboutMe__paragraph .aboutMe__paragraph--link:hover {
-  color: #bbb3b3;
-}
-.mainSection .aboutMe .infoCard .info .buttonCV {
-  width: 50%;
-  height: 5vh;
-  border-radius: 12px;
-  background-color: #3a3838;
-  color: #faf9f7;
-}
-.mainSection .aboutMe .infoCard .info .buttonCV:hover {
-  background-color: #141111;
-  visibility: visible;
-}
-.mainSection .aboutMe .infoCard .info .aboutMe__skills {
-  margin-top: 4%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.mainSection .aboutMe .infoCard .info .aboutMe__skills .aboutMe__skills--try {
-  height: 9vh;
-  margin: 2%;
-}
-.mainSection .proyects {
-  position: relative;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding: 2%;
-}
-.mainSection .proyects .infoCardProyects {
-  margin: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 5vh;
-  border: 2px #3a3838 solid;
-  color: #faf9f7;
-  font-family: "Montserrat", sans-serif;
-}
-.mainSection .proyects .infoCardProyects .proyects__image--try {
-  width: 100%;
-}
-.mainSection .proyects .infoCardProyects .info .buttonProyects {
-  width: 100%;
-  height: 5vh;
-  border-radius: 12px;
-  background-color: #3a3838;
-  color: #faf9f7;
-}
-.mainSection .proyects .infoCardProyects .info .buttonProyects:hover {
-  background-color: #141111;
-  visibility: visible;
-}
-.mainSection .contactInfo {
-  background-color: rgba(17, 16, 16, 0.486);
-  margin-top: 3%;
-  position: relative;
-  width: 90%;
-  color: #faf9f7;
-  font-family: "Montserrat", sans-serif;
-}
-.mainSection .contactInfo .contactTitle {
-  font-size: 3rem;
-  text-align: center;
-}
-.mainSection .contactInfo .waysContact .waysContact__images,
-.mainSection .contactInfo .waysContact .socialMedia__images,
-.mainSection .contactInfo .socialMedia .waysContact__images,
-.mainSection .contactInfo .socialMedia .socialMedia__images {
-  margin: 1%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.mainSection .contactInfo .waysContact .waysContact__images .socialMedia__links,
-.mainSection .contactInfo .waysContact .socialMedia__images .socialMedia__links,
-.mainSection .contactInfo .socialMedia .waysContact__images .socialMedia__links,
-.mainSection .contactInfo .socialMedia .socialMedia__images .socialMedia__links {
-  height: 15vh;
-}
-.mainSection .contactInfo .waysContact .waysContact__images .socialMedia__links .waysContact__images--try,
-.mainSection .contactInfo .waysContact .waysContact__images .socialMedia__links .socialMedia__images--try,
-.mainSection .contactInfo .waysContact .socialMedia__images .socialMedia__links .waysContact__images--try,
-.mainSection .contactInfo .waysContact .socialMedia__images .socialMedia__links .socialMedia__images--try,
-.mainSection .contactInfo .socialMedia .waysContact__images .socialMedia__links .waysContact__images--try,
-.mainSection .contactInfo .socialMedia .waysContact__images .socialMedia__links .socialMedia__images--try,
-.mainSection .contactInfo .socialMedia .socialMedia__images .socialMedia__links .waysContact__images--try,
-.mainSection .contactInfo .socialMedia .socialMedia__images .socialMedia__links .socialMedia__images--try {
-  margin: 1%;
-  height: 90%;
-}
-.mainSection .contactInfo .waysContact .waysContact__images .socialMedia__links .socialMedia__images--try-duo,
-.mainSection .contactInfo .waysContact .socialMedia__images .socialMedia__links .socialMedia__images--try-duo,
-.mainSection .contactInfo .socialMedia .waysContact__images .socialMedia__links .socialMedia__images--try-duo,
-.mainSection .contactInfo .socialMedia .socialMedia__images .socialMedia__links .socialMedia__images--try-duo {
-  margin: 1%;
-  height: 90%;
-  border-radius: 9px;
-}
 
-@media screen and (min-width: 645px) and (max-width: 863) {
-  .mainSection .aboutMe {
-    height: 125vh;
-  }
-  .mainSection .aboutMe .infoCard {
-    top: 10vh;
-    flex-wrap: nowrap;
-  }
-  .mainSection .aboutMe .infoCard .profilePics--try {
-    width: 20%;
-  }
-  .mainSection .aboutMe .infoCard .info .aboutMe__paragraph--link {
-    color: #faf9f7;
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    padding: 0.1%;
-  }
-  .mainSection .aboutMe .infoCard .info .aboutMe__paragraph--link:hover {
-    color: #bbb3b3;
-  }
-  .mainSection .aboutMe .infoCard .info .buttonCV {
-    width: 25%;
-    height: 5vh;
-    border-radius: 12px;
-    background-color: #3a3838;
-    color: #faf9f7;
-  }
-  .mainSection .aboutMe .infoCard .info .buttonCV:hover {
-    background-color: #141111;
-    visibility: visible;
-  }
-  .mainSection .proyects .infoCardProyects .info .buttonProyects {
-    width: 25%;
-    height: 5vh;
-    border-radius: 12px;
-    background-color: #3a3838;
-    color: #faf9f7;
-  }
-  .mainSection .proyects .infoCardProyects .info .buttonProyects:hover {
-    background-color: #141111;
-    visibility: visible;
-  }
-  .mainSection .contactInfo .waysContact .waysContact__images,
-.mainSection .contactInfo .waysContact .socialMedia__images,
-.mainSection .contactInfo .socialMedia .waysContact__images,
-.mainSection .contactInfo .socialMedia .socialMedia__images {
-    justify-content: space-evenly;
-  }
-  .mainSection .contactInfo .waysContact .waysContact__images .socialMedia__links,
-.mainSection .contactInfo .waysContact .socialMedia__images .socialMedia__links,
-.mainSection .contactInfo .socialMedia .waysContact__images .socialMedia__links,
-.mainSection .contactInfo .socialMedia .socialMedia__images .socialMedia__links {
-    height: 10vh;
-  }
-}
-@media screen and (min-width: 863px) {
-  .mainSection .aboutMe {
-    height: 125vh;
-  }
-  .mainSection .aboutMe .infoCard {
-    top: 10vh;
-    flex-direction: row;
-  }
-  .mainSection .aboutMe .infoCard .profilePics--try {
-    width: 20%;
-    display: block;
-  }
-  .mainSection .aboutMe .infoCard .info .aboutMe__paragraph--link {
-    color: #faf9f7;
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    padding: 0.1%;
-  }
-  .mainSection .aboutMe .infoCard .info .aboutMe__paragraph--link:hover {
-    color: #bbb3b3;
-  }
-  .mainSection .aboutMe .infoCard .info .buttonCV {
-    width: 15%;
-    height: 5vh;
-    border-radius: 12px;
-    background-color: #3a3838;
-    color: #faf9f7;
-  }
-  .mainSection .aboutMe .infoCard .info .buttonCV:hover {
-    background-color: #141111;
-    visibility: visible;
-  }
-  .mainSection .aboutMe .infoCard .info .buttonCV:hover {
-    visibility: visible;
-    animation: wave 1s forwards;
-  }
-  .mainSection .proyects .infoCardProyects {
-    flex-direction: row;
-  }
-  .mainSection .proyects .infoCardProyects .proyects__image--try {
-    width: 50%;
-  }
-  .mainSection .proyects .infoCardProyects .info .buttonProyects {
-    width: 30%;
-    height: 5vh;
-    border-radius: 12px;
-    background-color: #3a3838;
-    color: #faf9f7;
-  }
-  .mainSection .proyects .infoCardProyects .info .buttonProyects:hover {
-    background-color: #141111;
-    visibility: visible;
-  }
-  .mainSection .proyects .infoCardProyects .info .buttonProyects:hover {
-    visibility: visible;
-    animation: wave2 1s forwards;
-  }
-  .mainSection .contactInfo {
-    text-align: center;
-  }
-  .mainSection .contactInfo .waysContact .waysContact__images,
-.mainSection .contactInfo .waysContact .socialMedia__images,
-.mainSection .contactInfo .socialMedia .waysContact__images,
-.mainSection .contactInfo .socialMedia .socialMedia__images {
-    justify-content: space-evenly;
-  }
-  .mainSection .contactInfo .waysContact .waysContact__images .socialMedia__links,
-.mainSection .contactInfo .waysContact .socialMedia__images .socialMedia__links,
-.mainSection .contactInfo .socialMedia .waysContact__images .socialMedia__links,
-.mainSection .contactInfo .socialMedia .socialMedia__images .socialMedia__links {
-    height: 10vh;
-  }
-}
 @keyframes wave {
   0% {
     width: 15%;
