@@ -306,6 +306,10 @@ p {
     opacity: 0;
   }
 }
+#proyectsScroll {
+  height: 4vh;
+}
+
 .proyects {
   position: relative;
   margin-top: 5%;
@@ -374,6 +378,10 @@ p {
     animation: wave2 1s forwards;
   }
 }
+#aboutMeScroll {
+  height: 4vh;
+}
+
 .aboutMe {
   margin: 5%;
   height: 100vh;
