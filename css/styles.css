@@ -142,6 +142,10 @@ p {
     height: 10vh;
   }
 }
+#contactScroll {
+  height: 2vh;
+}
+
 .contactInfo {
   background-color: rgba(17, 16, 16, 0.486);
   margin: 3%;
@@ -168,7 +172,18 @@ p {
 .contactInfo .waysContact .socialMedia__images .socialMedia__links,
 .contactInfo .socialMedia .waysContact__images .socialMedia__links,
 .contactInfo .socialMedia .socialMedia__images .socialMedia__links {
+  text-decoration: none;
   height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactInfo .waysContact .waysContact__images .socialMedia__links .social_text,
+.contactInfo .waysContact .socialMedia__images .socialMedia__links .social_text,
+.contactInfo .socialMedia .waysContact__images .socialMedia__links .social_text,
+.contactInfo .socialMedia .socialMedia__images .socialMedia__links .social_text {
+  color: #faf9f7;
+  text-decoration: none;
 }
 .contactInfo .waysContact .waysContact__images .socialMedia__links .waysContact__images--try,
 .contactInfo .waysContact .waysContact__images .socialMedia__links .socialMedia__images--try,
@@ -179,7 +194,7 @@ p {
 .contactInfo .socialMedia .socialMedia__images .socialMedia__links .waysContact__images--try,
 .contactInfo .socialMedia .socialMedia__images .socialMedia__links .socialMedia__images--try {
   margin: 1%;
-  height: 90%;
+  height: 20%;
 }
 .contactInfo .waysContact .waysContact__images .socialMedia__links .socialMedia__images--try-duo,
 .contactInfo .waysContact .socialMedia__images .socialMedia__links .socialMedia__images--try-duo,
@@ -503,7 +518,7 @@ p {
 }
 .mainSection {
   position: static;
-  background-image: url("../images/aguavidrio.jpg");
+  background-image: url("../images/bg.jpg");
   min-height: 400vh;
   background-size: cover;
 }
