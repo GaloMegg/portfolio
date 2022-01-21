@@ -144,6 +144,7 @@ p {
 }
 #contactScroll {
   height: 4vh;
+  background-color: #141111;
 }
 
 .contactInfo {
@@ -308,6 +309,7 @@ p {
 }
 #proyectsScroll {
   height: 4vh;
+  background-color: #141111;
 }
 
 .proyects {
@@ -380,6 +382,7 @@ p {
 }
 #aboutMeScroll {
   height: 4vh;
+  background-color: #141111;
 }
 
 .aboutMe {
@@ -526,7 +529,7 @@ p {
 .mainSection {
   position: static;
   background-image: url("../images/bg.jpg");
-  min-height: 400vh;
+  height: 400vh;
   background-size: cover;
 }
 .mainSection .mainSection--gradient {
