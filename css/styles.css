@@ -18,7 +18,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #141111;
+  background-color: #212529;
   height: 100vh;
   width: 100%;
 }
@@ -144,11 +144,11 @@ p {
 }
 #contactScroll {
   height: 4vh;
-  background-color: #141111;
+  background-color: #212529;
 }
 
 .contactInfo {
-  background-color: rgba(17, 16, 16, 0.486);
+  background-color: #21252963;
   margin: 3%;
   position: relative;
   width: 90%;
@@ -245,7 +245,7 @@ p {
   justify-content: space-around;
   width: 100%;
   height: 4vh;
-  background-color: #141111;
+  background-color: #212529;
 }
 .stickyItem .homeLink {
   color: #faf9f7;
@@ -309,7 +309,7 @@ p {
 }
 #proyectsScroll {
   height: 4vh;
-  background-color: #141111;
+  background-color: #212529;
 }
 
 .proyects {
@@ -340,7 +340,7 @@ p {
   color: #faf9f7;
 }
 .proyects .infoCardProyects .info .buttonProyects:hover {
-  background-color: #141111;
+  background-color: #212529;
   visibility: visible;
 }
 
@@ -353,7 +353,7 @@ p {
     color: #faf9f7;
   }
   .proyects .infoCardProyects .info .buttonProyects:hover {
-    background-color: #141111;
+    background-color: #212529;
     visibility: visible;
   }
 }
@@ -372,7 +372,7 @@ p {
     color: #faf9f7;
   }
   .proyects .infoCardProyects .info .buttonProyects:hover {
-    background-color: #141111;
+    background-color: #212529;
     visibility: visible;
   }
   .proyects .infoCardProyects .info .buttonProyects:hover {
@@ -382,7 +382,7 @@ p {
 }
 #aboutMeScroll {
   height: 4vh;
-  background-color: #141111;
+  background-color: #212529;
 }
 
 .aboutMe {
@@ -440,7 +440,7 @@ p {
   color: #faf9f7;
 }
 .aboutMe .infoCard .info .buttonCV:hover {
-  background-color: #141111;
+  background-color: #212529;
   visibility: visible;
 }
 .aboutMe .infoCard .info .aboutMe__skills {
@@ -484,7 +484,7 @@ p {
     color: #faf9f7;
   }
   .aboutMe .infoCard .info .buttonCV:hover {
-    background-color: #141111;
+    background-color: #212529;
     visibility: visible;
   }
 }
@@ -518,7 +518,7 @@ p {
     color: #faf9f7;
   }
   .aboutMe .infoCard .info .buttonCV:hover {
-    background-color: #141111;
+    background-color: #212529;
     visibility: visible;
   }
   .aboutMe .infoCard .info .buttonCV:hover {
@@ -534,7 +534,7 @@ p {
 }
 .mainSection .mainSection--gradient {
   background: #141111;
-  background: linear-gradient(180deg, #141111 28%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, #212529 28%, rgba(0, 0, 0, 0) 100%);
   z-index: 1;
   height: 100%;
   display: flex;
