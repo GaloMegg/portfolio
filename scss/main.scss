@@ -1,7 +1,24 @@
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  background-color: #212529;
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background-color: #faf9f785;
+  &:hover{
+  background-color: #faf9f7;
+
+  }
+}
+body::-webkit-scrollbar-button {
+  height: 4vh;
+  background-color: #212529;
 }
 p {
   padding: 0;
@@ -13,7 +30,6 @@ p {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 //Docs
 @import "mixins";
-@import "variables";
 @import "queries/queries";
 @import "index/landing";
 @import "index/contact";
