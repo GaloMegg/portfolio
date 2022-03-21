@@ -16,7 +16,8 @@
     top: 5vh;
     border: 2px $lighterButton solid;
     color: $creamWhite;
-    font-family: "Montserrat", sans-serif;
+    font-family: $fontFamily;
+
     // font-family: "Roboto", sans-serif;
     .proyects__image--try {
       width: 100%;

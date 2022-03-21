@@ -23,7 +23,7 @@
           text-decoration: none;
           animation: text-blur-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
             reverse both;
-          font-family: "Roboto", sans-serif;
+          font-family: $fontFamily;
         }
       }
     }
@@ -44,7 +44,7 @@
         color: $creamWhite;
         animation: text-blur-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
           reverse both;
-        font-family: "Montserrat", sans-serif;
+        font-family: $fontFamily;
         z-index: 2;
       }
       .landing__B--animation {
@@ -61,7 +61,7 @@
       color: $creamWhite;
       animation: text-blur-out 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse
         both;
-      font-family: "Roboto", sans-serif;
+      font-family: $fontFamily;
     }
   }
   #aboutMe {

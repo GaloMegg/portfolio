@@ -1,4 +1,4 @@
-#aboutMeScroll{
+#aboutMeScroll {
   height: 4vh;
   background-color: $darkBackground;
 }
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     color: $creamWhite;
-    font-family: "Montserrat", sans-serif;
+    font-family: $fontFamily;
     .profilePics--try {
       width: 50%;
       display: none;
@@ -27,7 +27,7 @@
       padding: 5%;
       .aboutMe__title {
         font-size: 2.4rem;
-        font-family: "Roboto", sans-serif;
+        font-family: $fontFamily;
       }
       .aboutMe__paragraph {
         .lenguagesListHeader {

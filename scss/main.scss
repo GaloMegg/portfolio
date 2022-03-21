@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 * {
   margin: 0;
@@ -11,9 +11,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 16px;
   background-color: #faf9f785;
-  &:hover{
-  background-color: #faf9f7;
-
+  &:hover {
+    background-color: #faf9f7;
   }
 }
 body::-webkit-scrollbar-button {
@@ -24,16 +23,12 @@ p {
   padding: 0;
   margin: 0;
 }
-//Fonts
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
 //Docs
-@import "mixins";
-@import "queries/queries";
-@import "index/landing";
-@import "index/contact";
-@import "index/sticky";
-@import "index/proyects";
-@import "index/aboutme";
-@import "index/mainsection";
+@import 'mixins';
+@import 'index/landing';
+@import 'index/contact';
+@import 'index/sticky';
+@import 'index/proyects';
+@import 'index/aboutme';
+@import 'index/mainsection';
