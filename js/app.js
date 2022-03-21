@@ -10,7 +10,8 @@ $("#aboutMe").on("click", ScrollDownAboutMe)
 function ScrollDownAboutMe(e) {
     e.preventDefault()
     $("html , body").animate({
-        scrollTop: $("#aboutMeScroll").offset().top
+        scrollTop: $("#aboutMeScroll").
+            offset().top
     }, 1000)
 }
 
@@ -29,4 +30,3 @@ function ScrollDownContact(e) {
         scrollTop: $("#contactScroll").offset().top
     }, 1000)
 }
-

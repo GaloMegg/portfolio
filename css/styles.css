@@ -329,7 +329,6 @@ p {
 
 .proyects {
   position: relative;
-  margin-top: 5%;
   margin-left: 2%;
   margin-right: 2%;
   padding: 2%;
@@ -402,7 +401,6 @@ p {
 
 .aboutMe {
   margin: 5%;
-  height: 100vh;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -471,9 +469,6 @@ p {
 }
 
 @media screen and (min-width: 645px) and (max-width: 863) {
-  .aboutMe {
-    height: 125vh;
-  }
   .aboutMe .infoCard {
     top: 10vh;
     flex-wrap: nowrap;
@@ -504,9 +499,6 @@ p {
   }
 }
 @media screen and (min-width: 863px) {
-  .aboutMe {
-    height: 125vh;
-  }
   .aboutMe .infoCard {
     top: 10vh;
     flex-direction: row;
@@ -544,7 +536,6 @@ p {
 .mainSection {
   position: static;
   background-image: url("../images/bg.jpg");
-  height: 400vh;
   background-size: cover;
 }
 .mainSection .mainSection--gradient {
