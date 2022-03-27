@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 body::-webkit-scrollbar {
   background-color: #212529;
@@ -32,3 +33,4 @@ p {
 @import 'index/proyects';
 @import 'index/aboutme';
 @import 'index/mainsection';
+@import 'index/cursor';

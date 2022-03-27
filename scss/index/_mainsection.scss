@@ -1,7 +1,8 @@
 .mainSection {
   position: static;
-  background-image: url("../images/bg.jpg");
+  background-image: url('../images/bg.jpg');
   background-size: cover;
+
   .mainSection--gradient {
     background: rgb(20, 17, 17);
     background: linear-gradient(
@@ -20,7 +21,6 @@
 // }
 //media QUERy
 @media screen and (min-width: 863px) {
-  
 }
 @keyframes wave {
   0% {

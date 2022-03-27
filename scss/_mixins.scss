@@ -13,6 +13,7 @@
 @mixin button($width: 15%) {
   width: $width;
   height: 5vh;
+  cursor: none ;
   border-radius: 12px;
   background-color: $lighterButton;
   color: $creamWhite;
