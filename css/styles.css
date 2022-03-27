@@ -572,35 +572,41 @@ p {
   }
 }
 .cursor {
-  pointer-events: none;
-  position: fixed;
-  width: 16px;
-  height: 16px;
-  left: 16px;
-  top: 16px;
-  z-index: 10;
-  transition: none;
-}
-.cursor .cursor__element {
-  background-color: #faf9f7;
-  border-radius: 100%;
-  width: 100%;
-  height: 100%;
-}
-.cursor .cursor__clicked {
-  background: none;
-  border: 2px solid #faf9f7;
-}
-.cursor .hoverlinked {
-  background-color: #faf9f769;
-  -webkit-animation: vibrate-1 0.3s linear infinite alternate-reverse backwards;
-  animation: vibrate-1 0.3s linear infinite alternate-reverse backwards;
-}
-
-.hidden {
   display: none;
 }
 
+@media screen and (min-width: 863px) {
+  .cursor {
+    display: block;
+    pointer-events: none;
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    left: 16px;
+    top: 16px;
+    z-index: 10;
+    transition: none;
+  }
+  .cursor .cursor__element {
+    background-color: #faf9f7;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .cursor .cursor__clicked {
+    background: none;
+    border: 2px solid #faf9f7;
+  }
+  .cursor .hoverlinked {
+    background-color: #faf9f769;
+    -webkit-animation: vibrate-1 0.3s linear infinite alternate-reverse backwards;
+    animation: vibrate-1 0.3s linear infinite alternate-reverse backwards;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
 @-webkit-keyframes vibrate-1 {
   0% {
     -webkit-transform: translate(0);
