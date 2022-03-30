@@ -26,7 +26,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass scss/main.scss css/styles.css --watch "
+    "sass": "sass scss/main.scss css/styles.css --watch ",
+    "sassm": "sass scss/main.scss css/styles.min.css --watch --style compressed"
   },
   "repository": {
     "type": "git",
