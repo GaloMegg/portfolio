@@ -4,26 +4,33 @@
   margin: 0;
   padding: 0;
   cursor: none;
+  user-select: none;
 }
+
 body::-webkit-scrollbar {
   background-color: #212529;
   width: 5px;
 }
+
 body::-webkit-scrollbar-thumb {
   border-radius: 16px;
   background-color: #faf9f785;
+
   &:hover {
     background-color: #faf9f7;
   }
 }
+
 body::-webkit-scrollbar-button {
   height: 4vh;
   background-color: #212529;
 }
+
 p {
   padding: 0;
   margin: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
 //Docs
 @import 'mixins';
