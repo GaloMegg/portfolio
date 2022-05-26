@@ -1,8 +1,9 @@
+@use "./variables" as v;
 @mixin links {
-  color: $creamWhite;
+  color: v.$creamWhite;
   text-decoration: none;
   font-size: 1rem;
-  font-family: $fontFamily;
+  font-family: v.$fontFamily;
   padding: 0.1%;
 
   &:hover {
@@ -15,11 +16,11 @@
   height: 5vh;
   cursor: none;
   border-radius: 12px;
-  background-color: $lighterButton;
-  color: $creamWhite;
+  background-color: v.$lighterButton;
+  color: v.$creamWhite;
 
   &:hover {
-    background-color: $darkBackground;
+    background-color: v.$creamWhiteOpacity;
     visibility: visible;
   }
 }

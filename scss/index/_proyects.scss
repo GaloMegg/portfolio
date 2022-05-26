@@ -22,8 +22,12 @@
       width: 100%;
     }
     .info {
-      .buttonProyects {
-        @include button(100%);
+      width: 100%;
+      &>a{
+        width: 100%;
+        .buttonProyects {
+          @include button(100%);
+        }
       }
     }
   }
